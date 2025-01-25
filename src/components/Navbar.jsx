@@ -68,10 +68,7 @@ export const Navbar = () => {
           <button className="bg-cyan-600 rounded-md h-10 w-30 text-white hover:bg-cyan-300">
             Add a project
           </button>
-          <button
-            className=" rounded-md bg-white text-black h-10 w-20 hover:bg-cyan-2
-        00"
-          >
+          <button className=" rounded-md bg-white text-black h-10 w-20 hover:text-blue-500">
             Log in
           </button>
         </div>
