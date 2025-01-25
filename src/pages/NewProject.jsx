@@ -1,13 +1,13 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { PhotoIcon} from '@heroicons/react/24/solid'
 
 
 const NewProject = () => {
-
-
-     const {register, handleSubmit, reset} = useForm()
+    const [fileUploaded, setFileUploaded] = useState(false)
+    
+    const {register, handleSubmit, reset} = useForm()
     const onSubmit = (data) => {
         console.log(data)
         reset()
@@ -95,7 +95,7 @@ const NewProject = () => {
                   <div className="mt-4 flex text-sm/6 text-gray-600">
                     <label
                       htmlFor="file-upload"
-                      className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500"
+                      className="relative cursor-pointer rounded-md bg-white font-semibold text-blue-500"
                     >
                       <span>Upload a file</span>
                       <input id="file-upload" name="file-upload" type="file" className="sr-only" />
@@ -124,7 +124,9 @@ const NewProject = () => {
                 </div>
 
             </div>
-
+            <div>
+            <input id="file-upload1" name="file-upload1" type="file" className="sr-only1 border-2 border-black" />
+            </div>
             <div>
                 <button
                   type="submit"

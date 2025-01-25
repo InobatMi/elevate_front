@@ -2,11 +2,24 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Registration from "./Registration";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
   const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    try {
+      const response = await axios.post('https://9544-2a09-bac1-77c0-8-00-80-101.ngrok-free.app/api/login', {
+        params: {
+          email: data.email,
+          password: data.password,
+        },
+      });
+    //   test@example.com
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
     reset();
   };
 
