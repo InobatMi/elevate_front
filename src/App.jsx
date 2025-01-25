@@ -1,11 +1,11 @@
 import React from "react";
-import Login from "./pages/login"
+import Registration from "./pages/Registration"
 
 
 function App() {
   return (
     <>
-      <Login/>
+      <Registration/>
     </>
   );
 }
