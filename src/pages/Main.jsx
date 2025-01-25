@@ -15,7 +15,11 @@ const Main = () => {
     { name: "Hours per week", value: "40" },
     { name: "Paid time off", value: "Unlimited" },
   ];
-
+  const projects = [
+    { id: 1, title: "Food project" },
+    { id: 2, title: "Music project" },
+    { id: 3, title: "Technology Project" },
+  ];
   return (
     <div class="bg-gray-50 py-10">
       <div class=" lg:max-w-7xl lg:px-2">
@@ -185,6 +189,22 @@ const Main = () => {
             </dl>
           </div>
         </div>
+      </div>
+      <h2 class="text-center text-base/7 font-semibold text-cyan-600  mt-20">
+        Our Projects
+      </h2>
+
+      <div className="flex justify-center  items-center gap-5 p-5">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="bg-gray-100 p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
+          >
+            <h3 className="text-lg font-semibold text-gray-700">
+              {project.title}
+            </h3>
+          </div>
+        ))}
       </div>
     </div>
   );
