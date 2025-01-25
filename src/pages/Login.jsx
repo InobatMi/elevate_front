@@ -1,14 +1,24 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 
 
 const Login = () => {
+
+
+    const {register, handleSubmit, reset} = useForm()
+    const onSubmit = (data) => {
+        console.log(data)
+        reset()
+    } 
+        
+
     return (
     <section className="flex min-h-full items-center w-screen h-screen bg-slate-200 flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className='bg-white rounded w-[40vw]'>
+        <div className='bg-white rounded py-4 px-7 md:w-[50vw] w-[70vw]'>
             <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
               Sign in to your account
             </h2>
-            <form action="#" method="POST" className="space-y-6 my-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form action="#" method="POST" onSubmit={handleSubmit(onSubmit)} className="space-y-6 my-10 sm:mx-auto sm:w-full sm:max-w-sm">
               <div>
                 <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                   Email address
@@ -16,7 +26,7 @@ const Login = () => {
                 <div className="mt-2">
                   <input
                     id="email"
-                    name="email"
+                    {...register('email')}
                     type="email"
                     required
                     autoComplete="email"
@@ -39,7 +49,7 @@ const Login = () => {
                 <div className="mt-2">
                   <input
                     id="password"
-                    name="password"
+                    {...register('password')}
                     type="password"
                     required
                     autoComplete="current-password"
