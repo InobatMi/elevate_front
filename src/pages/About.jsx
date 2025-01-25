@@ -77,3 +77,5 @@ export default function Example() {
     </div>
   );
 }
+
+// i want something just  like this
