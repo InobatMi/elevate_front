@@ -79,7 +79,7 @@ const Login = () => {
             </button>
           </div>
           <hr />
-          <div className="text-center flex gap-1 justify-center">
+          <div className="text-center items-center flex gap-1 justify-center">
             <p className="text-gray-900 text-sm">New to Elevate?</p>
             <Link to="/Registration">
               <button className="text-sm text-blue-500"> Registration</button>

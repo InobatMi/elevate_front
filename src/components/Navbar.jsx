@@ -37,7 +37,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="flex  bg-white sticky justify-center items-center h-[150px] gap-3 p-2 shadow-md w-screen flex-col">
+    <nav className="flex  bg-white sticky justify-center items-center h-[150px] gap-3 p-2 shadow-md w-full flex-col">
       <div className="flex gap-3 items-center w-full p-1 justify-between">
         <div className="flex justify-center items-center gap-3">
           <img src={K} alt="" className="w-16 h-16 Logo" />
