@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "./components/Layout";
+import Registration from "./pages/Registration";
 
 function App() {
   return (
      <>
-      <Layout />
+      <Registration/>
     </>
   );
 }

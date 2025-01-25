@@ -3,13 +3,13 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 
-const Login = () => {
+const Registration = () => {
 
 
      const {register, handleSubmit, reset} = useForm()
     const onSubmit = async (data) => {
             try {
-                const response = await axios.post('https://crudcrud.com/api/f0ef3ea7c2454e6d80f7317ab09743bc/users', data)
+                const response = await axios.post('https://9544-2a09-bac1-77c0-8-00-80-101.ngrok-free.app/api/register', data)
                 console.log(response.data)
                 reset()
             } catch {
@@ -115,4 +115,4 @@ const Login = () => {
     )
   }
 
-  export default Login
+  export default Registration
