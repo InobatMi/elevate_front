@@ -18,14 +18,14 @@ const Login = () => {
     } 
 
     return (
-    <section className="flex min-h-full items-center w-screen h-screen bg-slate-200 flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className='bg-white rounded px-7 md:w-[50vw] w-[70vw]'>
+    <section className="flex min-h-full  items-center w-screen h-screen bg-slate-200 flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+        <div className='bg-white rounded px-7 md:w-[45vw] w-[70vw]'>
             <h2 className="mt-5 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
               Sign Up
             </h2>
-            <form action="#" method="POST" onSubmit={handleSubmit(onSubmit)} className="space-y-6 my-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form action="#" method="POST" onSubmit={handleSubmit(onSubmit)} className="space-y-6 my-5 sm:mx-auto sm:w-full sm:max-w-sm">
             <div className="flex gap-3 items-center">
-          <div className="flex gap-4 flex-col sm:flex-row">
+          <div className="flex gap-4">
             <div className="flex gap-2">
               <input
                 type="radio"
