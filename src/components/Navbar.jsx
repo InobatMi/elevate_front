@@ -40,8 +40,8 @@ export const Navbar = () => {
     <nav className="flex  bg-white sticky justify-center items-center h-[150px] gap-3 p-2 shadow-md w-full flex-col">
       <div className="flex gap-3 items-center w-full p-1 justify-between">
         <div className="flex justify-center items-center gap-3">
-          <img src={K} alt="" className="w-16 h-16 Logo" />
-          <a href="/">
+          <img src={K} alt="" className="w-16 h-16 Logo " />
+          <a href="/" className="sm:hidden lg:block">
             {" "}
             <h1 className="text-4xl font-bold">EL:VATE</h1>
           </a>
