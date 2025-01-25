@@ -1,7 +1,7 @@
 import React from "react";
 import K from "../assets/simple logo for the word elevate with a rocket in blue.png";
 import { Bell } from "lucide-react";
-
+import "../index.css";
 import H from "../assets/profile.jpg";
 
 export const Navbar = () => {
@@ -30,16 +30,16 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="flex  bg-white sticky justify-center items-center h-[100px] gap-3 p-2 shadow-sm w-screen flex-col">
+    <nav className="flex  bg-white sticky justify-center items-center h-[110px] gap-3 p-2 shadow-sm w-screen flex-col">
       <div className="flex gap-3 items-center w-full p-1 justify-between">
-        <div className="flex justify-center items-center">
-          <img src={K} alt="" className="" />
-          <h1 className="text-lg font-bold">Elevate</h1>
+        <div className="flex justify-center items-center gap-3">
+          <img src={K} alt="" className="w-16 h-16 Logo" />
+          <h1 className="text-4xl font-bold">EL:VATE</h1>
         </div>
-        <div className=" ">
+        <div>
           <input
             type="search"
-            className="bg-grey-100 w-[400px] h-[40px] rounded-md border-0.5 border-black shadow-md p-2"
+            className="bg-grey-100 w-[300px] h-[40px] rounded-md border-0.5 border-black shadow-md p-2"
           />
         </div>
         <div className="flex gap-2">

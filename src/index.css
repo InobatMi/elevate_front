@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+h1 {
+    font-family: "Rowdies", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(16, 98, 122);
+}
