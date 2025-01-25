@@ -24,7 +24,30 @@ const Login = () => {
               Sign Up
             </h2>
             <form action="#" method="POST" onSubmit={handleSubmit(onSubmit)} className="space-y-6 my-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <div>
+            <div className="flex gap-3 items-center">
+          <div className="flex gap-4 flex-col sm:flex-row">
+            <div className="flex gap-2">
+              <input
+                type="radio"
+                {...register("type")}
+                id="startupper"
+                value="startupper"
+                checked
+              />
+              <label htmlFor="startupper">Startupper</label>
+            </div>
+            <div className="flex gap-2">
+              <input
+                type="radio"
+                {...register("type")}
+                id="businessman"
+                value="businessman"
+              />
+              <label htmlFor="businessman">Businessman</label>
+            </div>
+          </div>
+            </div>
+            <div>
                 <label htmlFor="name" className="block text-sm/6 font-medium text-gray-900">
                   Name
                 </label>
@@ -37,8 +60,8 @@ const Login = () => {
                     className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
                   />
                 </div>
-              </div>
-              <div>
+            </div>
+            <div>
                 <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                   Email address
                 </label>
@@ -52,9 +75,9 @@ const Login = () => {
                     className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
                   />
                 </div>
-              </div>
+            </div>
   
-              <div>
+            <div>
                 <div className="flex items-center justify-between">
                   <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                     Password
@@ -70,21 +93,21 @@ const Login = () => {
                     className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
                   />
                 </div>
-              </div>
+            </div>
   
-              <div>
+            <div>
                 <button
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                 >
                   Create account
                 </button>
-              </div>
-              <hr />
-              <div className='text-center flex gap-1 justify-center'>
+            </div>
+            <hr />
+            <div className='text-center flex gap-1 justify-center'>
                 <p className='text-gray-900 text-sm'>Have an account?</p>
                  <a href="./login" className="text-sm text-blue-500">Login</a>
-              </div>
+            </div>
             </form>
         </div>   
   
