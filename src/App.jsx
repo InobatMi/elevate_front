@@ -1,10 +1,14 @@
 import React from "react";
 import Layout from "./components/Layout";
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
 
 function App() {
   return (
-     <>
-      <Layout />
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
     </>
   );
 }
