@@ -2,7 +2,7 @@ import React from "react";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import NewProject from "./pages/NewProject";
 import Registration from "./pages/Registration";
 import Main from "./pages/Main";
