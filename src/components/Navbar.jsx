@@ -1,8 +1,8 @@
 import React from "react";
 import K from "../assets/simple logo for the word elevate with a rocket in blue.png";
-import { Bell } from "lucide-react";
+
 import "../index.css";
-import H from "../assets/profile.jpg";
+
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
@@ -65,12 +65,17 @@ export const Navbar = () => {
           </div>
         </div> */}
         <div className="flex gap-3 ">
-          <button className="bg-cyan-600 rounded-md h-10 w-30 text-white hover:bg-cyan-300">
-            Add a project
-          </button>
-          <button className=" rounded-md bg-white text-black h-10 w-20 hover:text-blue-500">
-            Log in
-          </button>
+          <Link to="/NewProject">
+            <button className="bg-cyan-600 rounded-md h-10 w-30 text-white hover:bg-cyan-300">
+              Add a project
+            </button>
+          </Link>
+
+          <Link to="/Login">
+            <button className=" rounded-md bg-white text-black h-10 w-20 hover:text-blue-500">
+              Log in
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center items-center gap-3">

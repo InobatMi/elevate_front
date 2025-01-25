@@ -3,7 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 
-const Login = () => {
+const Registration = () => {
 
 
      const {register, handleSubmit, reset} = useForm()
@@ -115,4 +115,4 @@ const Login = () => {
     )
   }
 
-  export default Login
+  export default Registration
