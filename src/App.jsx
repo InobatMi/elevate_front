@@ -1,10 +1,14 @@
 import React from "react";
+import { Button } from '@shadcn/ui';
 
 function App() {
   return (
-    <h1>
-      hello
-    </h1>
+    <>
+       {/* <Button className="bg-blue-500 text-white">
+        Hello ShadCN UI
+      </Button> */}
+      <h1>hello world</h1>
+    </>
   );
 }
 
