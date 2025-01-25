@@ -206,7 +206,7 @@ const Main = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-100 p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
+            className="bg-gray-100 flex-col p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
           >
             <h3 className="text-lg font-semibold text-gray-700">
               {project.title}

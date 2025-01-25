@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { PhotoIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const NewProject = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -146,7 +147,7 @@ const NewProject = () => {
           </div>
 
           <div>
-            <Link to="/">
+            <Link to="/Projects">
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
