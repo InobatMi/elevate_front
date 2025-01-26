@@ -2,6 +2,9 @@ import React from "react";
 import P from "../assets/photo_2025-01-25_16-02-45.jpg";
 import Y from "../assets/photo_2025-01-25_16-05-59.jpg";
 import { LucideFolderMinus } from "lucide-react";
+import foodImage from "../assets/food.png"; 
+import musicImage from "../assets/music.jpg"; 
+import technologyImage from "../assets/technology.png";
 
 const Main = () => {
   const links = [
@@ -21,17 +24,17 @@ const Main = () => {
         id: 1, 
         title: "Food project", 
         topic: "lorem ipsum, dolor sit amet",
-        src: '../assets/food.png' },
+        src: foodImage },
     { 
         id: 2, 
         title: "Music project", 
         topic: "lorem ipsum, dolor sit amet",
-        src: '../assets/music.jpg' },
+        src: musicImage },
     {
       id: 3,
       title: "Technology Project",
       topic: "lorem ipsum, dolor sit amet",
-      src: '../assets/technology.png'
+      src: technologyImage
     },
   ];
   return (
@@ -216,13 +219,18 @@ const Main = () => {
           <div
             key={project.id}
             style={{backgroundImage: `url(${project.src})`}}
-            className={`flex-col p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center`}
+            className={`flex-col relative p-5 bg-no-repeat drop-shadow-2xl backdrop-blur-sm bg-center bg-cover  rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center`}
           >
             {/* <img src={project.src} alt="" /> */}
-            <h3 className="text-lg font-semibold text-gray-700">
-              {project.title}
-            </h3>
-            <p>{project.topic}</p>
+            <div
+            className={`absolute top-0 w-[100%] h-[100%] left-0 bg-black opacity-15`}>
+            </div>
+            <div className="bg-white">
+                <h3 className="text-lg font-semibold text-gray-700">
+                {project.title}
+                </h3>
+                <p>{project.topic}</p>
+            </div>
           </div>
         ))}
       </div>

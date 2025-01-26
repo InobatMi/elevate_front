@@ -19,7 +19,7 @@ const Footer = () => {
       ];
 
     return (
-        <footer className="relative w-full">
+        <footer className="relative mt-11  bg-gray-100 pt-10 border- w-full">
           <div className="mx-auto w-full max-w-7xl px-8">
             <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
               <div className="flex items-center gap-3">
