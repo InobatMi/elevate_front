@@ -1,10 +1,10 @@
 # Elevate - Description
 
 Website which
-    - Gives second chance to startups which haven’t been recognized 
-    - Gives ability to upload hackathons startups easily
-    - Allows investors to find StartUpers easily and contact them
-    - Uses Crowdfunding method to fund most valuable Start Up
+- Gives second chance to startups which haven’t been recognized 
+- Gives ability to upload hackathons startups easily
+- Allows investors to find StartUpers easily and contact them
+- Uses Crowdfunding method to fund most valuable Start Up
 
 
 ## Technologies Used
@@ -21,5 +21,5 @@ Website which
 ## Installation
 
 
-git clone https://github.com/InobatMi/elevate_front.git
-npm install
+1. git clone https://github.com/InobatMi/elevate_front.git
+2. npm install
