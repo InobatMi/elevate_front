@@ -1,8 +1,20 @@
-# React + Vite
+# Elevate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A brief description of your application. Explain what it does and its main features.
 
-Currently, two official plugins are available:
+Website which
+    - Gives second chance to startups which haven’t been recognized and ability to upload them
+    - Allows investors to find StartUpers easily and contact them
+    - Uses Crowdfunding method to fund most valuable Start Up
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Technologies Used
+
+- **React** - A JavaScript library for building user interfaces
+- **Vite** - A fast build tool that provides a better development experience
+- **React Router** - For handling routing in the application
+- **Axios** - For making HTTP requests
+- **Tailwind CSS** - For styling the application
+- **Zustand** - For state management
+- **Heroicons** - For SVG icons, 
+- **Radix UI** - For accessible UI components
