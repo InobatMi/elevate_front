@@ -1,9 +1,8 @@
-# Elevate
-
-A brief description of your application. Explain what it does and its main features.
+# Elevate - Description
 
 Website which
-    - Gives second chance to startups which haven’t been recognized and ability to upload them
+    - Gives second chance to startups which haven’t been recognized 
+    - Gives ability to upload hackathons startups easily
     - Allows investors to find StartUpers easily and contact them
     - Uses Crowdfunding method to fund most valuable Start Up
 
@@ -18,3 +17,9 @@ Website which
 - **Zustand** - For state management
 - **Heroicons** - For SVG icons, 
 - **Radix UI** - For accessible UI components
+
+## Installation
+
+
+git clone https://github.com/InobatMi/elevate_front.git
+npm install
