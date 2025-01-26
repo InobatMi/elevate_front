@@ -17,12 +17,21 @@ const Main = () => {
     { name: "Paid time off", value: "Unlimited" },
   ];
   const projects = [
-    { id: 1, title: "Food project", topic: "lorem ipsum, dolor sit amet" },
-    { id: 2, title: "Music project", topic: "lorem ipsum, dolor sit amet" },
+    {   
+        id: 1, 
+        title: "Food project", 
+        topic: "lorem ipsum, dolor sit amet",
+        src: '../assets/food.png' },
+    { 
+        id: 2, 
+        title: "Music project", 
+        topic: "lorem ipsum, dolor sit amet",
+        src: '../assets/music.jpg' },
     {
       id: 3,
       title: "Technology Project",
       topic: "lorem ipsum, dolor sit amet",
+      src: '../assets/technology.png'
     },
   ];
   return (
@@ -206,8 +215,10 @@ const Main = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-100 flex-col p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
+            style={{backgroundImage: `url(${project.src})`}}
+            className={`flex-col p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center`}
           >
+            {/* <img src={project.src} alt="" /> */}
             <h3 className="text-lg font-semibold text-gray-700">
               {project.title}
             </h3>
