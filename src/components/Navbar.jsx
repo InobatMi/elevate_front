@@ -80,9 +80,9 @@ export const Navbar = () => {
       </div>
       <div className="flex justify-center items-center gap-3">
         {categories.map((category, index) => (
-          <button key={index} className=" p-1 rounded-md font-medium">
+          <Link key={index} className=" p-1 rounded-md font-medium">
             {category.name}
-          </button>
+          </Link>
         ))}
       </div>
     </nav>

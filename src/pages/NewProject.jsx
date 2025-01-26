@@ -42,48 +42,56 @@ const NewProject = () => {
         },
       ];
 
-      
-
-    return (
+  return (
     <section className="flex items-center  bg-slate-200 flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className='bg-white rounded px-7 md:w-[45vw] w-[70vw]'>
-            <h2 className="mt-5 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-              Add Your Project
-            </h2>
-            <form action="#" method="POST" onSubmit={handleSubmit(onSubmit)} className="space-y-6 my-5 sm:mx-auto sm:w-full sm:max-w-sm">
-            <div>
-                <label htmlFor="category" className="block text-sm/6 font-medium text-gray-900">
-                Category
-                </label>
-                <select
-                {...register("category")}
-                className=" border-2 rounded py-2 w-full px-3"
-                id="category"
-                >
-                {categories.map((category, index) => (
-                    <option value={category.name} key={index}>
-                        {category.name}
-                    </option>
-                ))}
-                </select>
+      <div className="bg-white rounded px-7 md:w-[45vw] w-[70vw]">
+        <h2 className="mt-5 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+          Add Your Project
+        </h2>
+        <form
+          action="#"
+          method="POST"
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6 my-5 sm:mx-auto sm:w-full sm:max-w-sm"
+        >
+          <div>
+            <label
+              htmlFor="category"
+              className="block text-sm/6 font-medium text-gray-900"
+            >
+              Category
+            </label>
+            <select
+              {...register("category")}
+              className=" border-2 rounded py-2 w-full px-3"
+              id="category"
+            >
+              {categories.map((category, index) => (
+                <option value={category.name} key={index}>
+                  {category.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="name"
+              className="block text-sm/6 font-medium text-gray-900"
+            >
+              Title
+            </label>
+            <div className="mt-2">
+              <input
+                id="name"
+                {...register("name")}
+                type="text"
+                required
+                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
+                placeholder="Give a title"
+              />
             </div>
-            
-            
-            <div>
-                <label htmlFor="name" className="block text-sm/6 font-medium text-gray-900">
-                  Title
-                </label>
-                <div className="mt-2">
-                  <input
-                    id="name"
-                    {...register('name')}
-                    type="text"
-                    required
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
-                    placeholder='Give a title'
-                  />
-                </div>
-            </div>
+          </div>
 
             <div className="col-span-full">
               <label htmlFor="cover-photo" className="block text-sm/6 font-medium text-gray-900">
@@ -139,7 +147,7 @@ const NewProject = () => {
         </div>   
   
     </section>
-    )
-  }
+  );
+};
 
-  export default NewProject
+export default NewProject;

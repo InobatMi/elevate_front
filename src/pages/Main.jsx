@@ -1,6 +1,7 @@
 import React from "react";
 import P from "../assets/photo_2025-01-25_16-02-45.jpg";
 import Y from "../assets/photo_2025-01-25_16-05-59.jpg";
+import { LucideFolderMinus } from "lucide-react";
 
 const Main = () => {
   const links = [
@@ -16,9 +17,13 @@ const Main = () => {
     { name: "Paid time off", value: "Unlimited" },
   ];
   const projects = [
-    { id: 1, title: "Food project" },
-    { id: 2, title: "Music project" },
-    { id: 3, title: "Technology Project" },
+    { id: 1, title: "Food project", topic: "lorem ipsum, dolor sit amet" },
+    { id: 2, title: "Music project", topic: "lorem ipsum, dolor sit amet" },
+    {
+      id: 3,
+      title: "Technology Project",
+      topic: "lorem ipsum, dolor sit amet",
+    },
   ];
   return (
     <div class="bg-gray-50 py-10">
@@ -193,16 +198,20 @@ const Main = () => {
       <h2 class="text-center text-base/7 font-semibold text-cyan-600  mt-20">
         Our Projects
       </h2>
+      <p class="mx-auto  max-w-lg text-center text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+        Some Projects from our Hackathons
+      </p>
 
       <div className="flex justify-center  items-center gap-5 p-5">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-100 p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
+            className="bg-gray-100 flex-col p-5 rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center"
           >
             <h3 className="text-lg font-semibold text-gray-700">
               {project.title}
             </h3>
+            <p>{project.topic}</p>
           </div>
         ))}
       </div>
