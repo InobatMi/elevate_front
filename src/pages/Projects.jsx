@@ -34,12 +34,12 @@ const Projects = () => {
     <div className='flex flex-col gap-4'>
       <div className="flex justify-center  items-center gap-5 p-5">
         {projects.map((project) => (
+            
           <div
             key={project.id}
             style={{backgroundImage: `url(${project.src})`}}
-            className={`flex-col relative p-5 bg-no-repeat drop-shadow-2xl backdrop-blur-sm bg-center bg-cover  rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center`}
+            className={`flex-col relative p-5 bg-no-repeat  drop-shadow-2xl backdrop-blur-sm bg-center bg-cover  rounded-lg shadow-md text-center w-72 h-[200px] flex items-center justify-center`}
           >
-            {/* <img src={project.src} alt="" /> */}
             <div
             className={`absolute top-0 w-[100%] h-[100%] left-0 bg-black opacity-15`}>
             </div>

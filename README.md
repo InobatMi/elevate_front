@@ -1,4 +1,4 @@
-# Elevate - Description
+# Elevate 
 
 Website which
 - Gives second chance to startups which haven’t been recognized 
