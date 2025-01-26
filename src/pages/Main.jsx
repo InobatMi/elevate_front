@@ -39,7 +39,7 @@ const Main = () => {
   ];
   return (
     <div class="bg-gray-50 py-10">
-      <div class=" lg:max-w-7xl lg:px-2">
+      <div class=" lg:px-2">
         <h2 class="text-center text-base/7 font-semibold text-cyan-600">
           Elevate your Project
         </h2>
